@@ -1,11 +1,298 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Website của tôi</title>
-  </head>
-  <body>
-    <h1>Xin chào!</h1>
-    <p>Đây là trang GitHub Pages đầu tiên của tôi.</p>
-  </body>
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hướng dẫn YouTube — Yoosun | Mẹ & Bé (2025)</title>
+  <style>
+    :root{
+      --brand-green:#2fa84f;
+      --brand-dark:#0b3b1f;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --bg:#f6faf6;
+      --max-w:1000px;
+      --radius:12px;
+      --shadow: 0 6px 20px rgba(11,59,31,0.06);
+      --glass: rgba(255,255,255,0.7);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#ffffff 60%);color:#0f172a}
+    .wrap{max-width:var(--max-w);margin:28px auto;padding:20px}
+
+    header{display:flex;gap:16px;align-items:center;margin-bottom:18px}
+    .logo{width:68px;height:68px;border-radius:14px;background:linear-gradient(135deg,var(--brand-green),#64c879);box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px}
+    .title h1{margin:0;font-size:20px}
+    .title p{margin:2px 0 0;color:var(--muted);font-size:13px}
+
+    .layout{display:grid;grid-template-columns:320px 1fr;gap:20px}
+
+    /* Sidebar */
+    nav.sidebar{position:sticky;top:22px;height:calc(100vh - 44px);overflow:auto;padding:14px;border-radius:12px;background:var(--card);box-shadow:var(--shadow)}
+    nav h3{margin:0 0 8px;font-size:14px;color:var(--brand-dark)}
+    nav ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+    nav a{display:block;padding:8px;border-radius:8px;color:var(--brand-dark);text-decoration:none;font-size:14px}
+    nav a:hover{background:#f0fff5}
+    nav .section-label{font-weight:600;color:var(--brand-green);font-size:12px}
+
+    /* Content */
+    main.content{padding:22px;background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(250,255,250,0.9));border-radius:12px;box-shadow:var(--shadow)}
+    section{margin-bottom:20px}
+    section h2{display:flex;align-items:center;gap:10px;margin:0 0 10px;font-size:18px}
+    .badge{background:var(--brand-green);color:white;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:600}
+
+    p.lead{color:var(--muted);margin:6px 0 14px}
+    ul.points{margin:10px 0 14px;padding-left:18px}
+    ul.points li{margin:8px 0;line-height:1.45}
+
+    .card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 4px 14px rgba(2,6,23,0.04);margin-top:10px}
+    .mini{font-size:13px;color:var(--muted)}
+
+    /* CTA box */
+    .cta{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px;border-radius:10px;background:linear-gradient(90deg,#f7fff7, #f0fff5);border:1px solid rgba(47,168,79,0.06)}
+
+    footer{margin-top:8px;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:920px){
+      .layout{grid-template-columns:1fr;}
+      nav.sidebar{position:relative;height:auto;order:2}
+      main.content{order:1}
+    }
+
+    /* Helpful small helpers */
+    .kbd{background:#0b3b1f;color:white;padding:6px 8px;border-radius:6px;font-weight:600;font-size:12px}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#f3fff3;color:var(--brand-dark);font-weight:600}
+
+    /* Table style */
+    .matrix{width:100%;border-collapse:collapse;margin-top:8px}
+    .matrix th,.matrix td{padding:8px;border-bottom:1px solid #eef6ee;text-align:left;font-size:14px}
+    .matrix th{background:#f7fff7}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">YS</div>
+      <div class="title">
+        <h1>Hướng dẫn YouTube — Yoosun | Mẹ & Bé (2025)</h1>
+        <p>Checklist & chiến lược tối ưu view tự nhiên trên YouTube (dành riêng cho thị trường Việt Nam)</p>
+      </div>
+    </header>
+
+    <div class="layout">
+      <nav class="sidebar" aria-label="Mục lục">
+        <h3 class="section-label">Mục lục</h3>
+        <ul>
+          <li><a href="#i">I. Yếu tố cốt lõi quyết định view</a></li>
+          <li><a href="#ii">II. Hướng dẫn tạo nội dung</a></li>
+          <li><a href="#iii">III. Checklist SEO (Ma trận 2025)</a></li>
+          <li><a href="#iv">IV. Giờ đăng & ngày tốt nhất</a></li>
+          <li><a href="#v">V. Mẹo thuật toán</a></li>
+          <li><a href="#vi">VI. Checklist khi đăng</a></li>
+          <li><a href="#vii">VII. Mẹo ít người biết</a></li>
+        </ul>
+
+        <div class="card" style="margin-top:14px">
+          <div class="mini">Brand colors</div>
+          <div style="display:flex;gap:8px;margin-top:8px;align-items:center">
+            <div style="width:36px;height:36px;border-radius:8px;background:var(--brand-green)"></div>
+            <div style="width:36px;height:36px;border-radius:8px;background:#ffffff;border:1px solid #e8f7ec"></div>
+          </div>
+          <p class="mini" style="margin-top:10px">Tip: Thumbnails dùng <strong>xanh lá + trắng</strong> để tăng nhận diện Yoosun.</p>
+        </div>
+      </nav>
+
+      <main class="content">
+
+        <section id="i">
+          <h2><span class="badge">I</span> Yếu tố cốt lõi quyết định view tự nhiên trên YouTube</h2>
+          <p class="lead">Đặc biệt chú ý với nội dung mẹ & bé — thị trường Việt Nam có nhiều hành vi tìm kiếm và thói quen xem riêng.</p>
+
+          <h3>1. Chủ đề phù hợp nhu cầu tìm kiếm (keyword demand)</h3>
+          <div class="card">
+            <ul class="points">
+              <li>Hăm tã, đỏ da, rôm sảy</li>
+              <li>Muỗi đốt, côn trùng cắn</li>
+              <li>Tắm gội cho bé</li>
+              <li>Massage cho trẻ sơ sinh</li>
+              <li>Dưỡng ẩm da trẻ</li>
+              <li>Sốt mọc răng, tiêu chảy, táo bón</li>
+              <li>Routine chăm sóc da cho bé</li>
+            </ul>
+            <p class="mini">Điểm quan trọng: Hãy làm video giải quyết <strong>1 vấn đề rất cụ thể</strong> → YouTube dễ đề xuất.</p>
+          </div>
+
+          <h3>2. CTR – tỷ lệ click vào video</h3>
+          <div class="card">
+            <ul class="points">
+              <li>Thumbnail nhiều text (ngắn), không tối giản như US.</li>
+              <li>Màu xanh lá + trắng rất hợp với Yoosun (dễ nhớ thương hiệu).</li>
+              <li>Cho thấy “kết quả” rõ ràng: “Hết hăm sau 24h?” “Muỗi đốt sưng to – xử lý đúng cách?”</li>
+              <li>Chỉ cần CTR &gt; 6% là khả năng được đề xuất rất mạnh.</li>
+            </ul>
+          </div>
+
+          <h3>3. Giữ chân người xem (Retention)</h3>
+          <div class="card">
+            <ul class="points">
+              <li>Độ dài lý tưởng cho mẹ & bé: <strong>2–4 phút</strong>.</li>
+              <li>Mở đầu 3–5 giây: đưa ra vấn đề ngay — tránh chào hỏi dài.</li>
+              <li>Không vòng vo “chào hỏi”, “giới thiệu thương hiệu”.</li>
+            </ul>
+          </div>
+
+          <h3>4. Thời lượng xem trung bình (AVD)</h3>
+          <div class="card">
+            <ul class="points">
+              <li>Gài các hook: “Đừng bỏ qua bước số 3 vì…”</li>
+              <li>Kể chuyện theo mạch.</li>
+              <li>Tránh cảnh tĩnh quá lâu.</li>
+            </ul>
+          </div>
+
+          <h3>5. Tương tác (comment quan trọng hơn like)</h3>
+          <div class="card">
+            <ul class="points">
+              <li>Nếu bạn hỏi 1 câu trong video, tỷ lệ comment tăng gấp 3.</li>
+              <li>Nên trả lời comment trong 48 giờ đầu → YouTube sẽ đẩy video mạnh hơn.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="ii">
+          <h2><span class="badge">II</span> Hướng dẫn tạo nội dung YouTube phù hợp với ngành Yoosun & mẹ bé</h2>
+
+          <div class="card">
+            <h4>A. Video giải thích – giáo dục (Edutainment)</h4>
+            <ul class="points">
+              <li>“5 cách trị hăm tã đúng chuẩn bác sĩ”</li>
+              <li>“Muỗi đốt: Phân biệt vết nguy hiểm và vết bình thường”</li>
+              <li>“Chọn dầu massage nào cho trẻ sơ sinh?”</li>
+            </ul>
+
+            <h4>B. Video đời sống – review thực tế</h4>
+            <ul class="points">
+              <li>Mẹ vlog: “1 ngày chăm bé 6 tháng bị hăm tã”</li>
+              <li>“Test sản phẩm Yoosun trên tình huống thực tế”</li>
+            </ul>
+
+            <h4>C. Video ngắn dạng giải pháp nhanh</h4>
+            <ul class="points">
+              <li>“Bạn xử lý thế này là sai! Đây mới là cách trị muỗi đốt đúng.”</li>
+              <li>“Tại sao bé tắm gội xong vẫn nổi mẩn?”</li>
+            </ul>
+
+            <h4>D. Video so sánh / phân biệt</h4>
+            <ul class="points">
+              <li>“3 loại kem trị hăm phổ biến – đâu là phù hợp nhất?”</li>
+              <li>“Sữa tắm gội trẻ sơ sinh: chọn thế nào để không khô da?”</li>
+            </ul>
+
+            <h4>E. Video về lỗi cha mẹ hay mắc</h4>
+            <ul class="points">
+              <li>“Sự thật là…”</li>
+              <li>“Sai lầm mà 90% bố mẹ không biết”</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="iii">
+          <h2><span class="badge">III</span> Checklist tối ưu SEO YouTube – MA TRẬN 2025 (VN)</h2>
+          <div class="card">
+            <h4>1. Tối ưu tiêu đề (Title)</h4>
+            <p class="mini">Công thức: <em>[Vấn đề] + [Giải pháp] + [Kết quả]</em></p>
+            <table class="matrix">
+              <thead><tr><th>Ví dụ</th></tr></thead>
+              <tbody>
+                <tr><td>“Trị hăm cho trẻ sơ sinh đúng chuẩn – hết đỏ chỉ sau 1 đêm?”</td></tr>
+                <tr><td>“Muỗi đốt sưng to – xử lý sai sẽ nguy hiểm!”</td></tr>
+              </tbody>
+            </table>
+
+            <h4>2. Tối ưu mô tả</h4>
+            <ul class="points">
+              <li>Dùng từ khóa LSI tiếng Việt: hăm tã, đỏ da, cách trị hăm, mẹo trị muỗi đốt, chăm sóc trẻ sơ sinh…</li>
+              <li>Viết thành 3 đoạn: Tóm tắt 2–3 dòng → Nội dung chi tiết → CTA (không bán hàng quá lộ).</li>
+            </ul>
+
+            <h4>3. Tối ưu tags</h4>
+            <p class="mini">Thêm cả phiên bản <strong>không dấu</strong> vì người Việt thường search không dấu.</p>
+            <ul class="points">
+              <li>tri ham</li>
+              <li>muoi dot</li>
+              <li>da kho tre so sinh</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="iv">
+          <h2><span class="badge">IV</span> Giờ đăng video tốt nhất tại Việt Nam (dữ liệu 2024–2025)</h2>
+          <div class="card">
+            <ul class="points">
+              <li>Khung giờ vàng: 11:00 – 13:00 & 19:00 – 22:00</li>
+              <li>Ngày đăng tốt nhất: Thứ 6 – Chủ nhật</li>
+            </ul>
+            <p class="mini">Quan trọng nhất: Trong 1 giờ đầu sau upload cần có tương tác & view từ subscriber/ cộng đồng — video vào "review" để được đẩy mạnh.</p>
+          </div>
+        </section>
+
+        <section id="v">
+          <h2><span class="badge">V</span> Mẹo thuật toán YouTube cho thị trường Việt Nam</h2>
+          <div class="card">
+            <ul class="points">
+              <li>Video phải hoạt động tốt trong 48 giờ đầu — share vào group Facebook mẹ & bé, Zalo, nhờ team comment hợp lý.</li>
+              <li>Thumbnails có khuôn mặt trẻ em → CTR luôn cao hơn (tránh gây sốc).</li>
+              <li>YouTube Shorts bùng nổ → Shorts giúp: lôi kéo view vào video dài, giới thiệu thương hiệu tự nhiên, dễ viral hơn ~10x so với video dài.</li>
+              <li>Không nhồi nhét tên thương hiệu: 80% content giá trị, 20% xuất hiện Yoosun.</li>
+              <li>Series (chuỗi) luôn được ưu tiên — ví dụ: "30 ngày chăm sóc da cho bé".</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="vi">
+          <h2><span class="badge">VI</span> Checklist khi đăng video</h2>
+          <div class="card">
+            <ul class="points">
+              <li>Tựa đề chứa từ khóa</li>
+              <li>Thumbnail rõ, text 3–6 chữ</li>
+              <li>Hashtag: <span class="pill">#yoosun</span> <span class="pill">#chamsocbe</span> <span class="pill">#hamta</span> <span class="pill">#muoido</span></li>
+              <li>Caption mô tả chi tiết</li>
+              <li>Ghim 1 bình luận hay</li>
+              <li>Gắn vào playlist “Chăm sóc trẻ sơ sinh”</li>
+              <li>Bật end-screen kéo sang video khác</li>
+              <li>Bật subtitle tiếng Việt (quan trọng cho SEO)</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="vii">
+          <h2><span class="badge">VII</span> Mẹo ít người biết (nhưng cực mạnh ở Việt Nam)</h2>
+          <div class="card">
+            <ul class="points">
+              <li>Video có “mẹo” hoặc “3 điều” luôn outperform.</li>
+              <li>Nhạc nền nhẹ cho nội dung mẹ bé tăng retention ~12%.</li>
+              <li>“So sánh trước – sau” giữ chân người xem cực tốt (ví dụ vết hăm ngày 1 → ngày 3).</li>
+              <li>Mở đầu bằng câu hỏi: tăng hiệu ứng tương tác.</li>
+              <li>Tải lên vào thời điểm nhiều người online — Chủ nhật buổi tối rất mạnh.</li>
+            </ul>
+          </div>
+        </section>
+
+        <footer>
+          <div class="cta">
+            <div>
+              <strong>Muốn tuỳ chỉnh?</strong>
+              <div class="mini">Tôi có thể thêm màu brand, icon, xuất PDF hoặc đẩy file lên Google Drive.</div>
+            </div>
+            <div style="text-align:right"><span class="kbd">Tip</span><div class="mini">Gọi tôi: "Thêm header/footer brand" để update nhanh.</div></div>
+          </div>
+          <p style="margin-top:12px">Phiên bản: 2025 • Dành cho Yoosun — Tối ưu cho thị trường Việt Nam.</p>
+        </footer>
+
+      </main>
+    </div>
+  </div>
+</body>
 </html>
